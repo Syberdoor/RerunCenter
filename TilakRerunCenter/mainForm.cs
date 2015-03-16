@@ -66,9 +66,17 @@ namespace RerunCenter {
                 inParams.SetPropertyValue("ContentPath", "");
                 inParams.SetPropertyValue("UserSid", "");
 
-                mc.InvokeMethod("EnforceApp", inParams, null);
+                try {
+                    mc.InvokeMethod("EnforceApp", inParams, null);
+                }
+                catch (Exception) {
+                    
+                    throw;
+                }
+                finally {
+                    changeWMIValue(appDeliveryTypeId, oldDetectionMethod); // always write back old method to corruption of wmi in case of errors
+                }
 
-                changeWMIValue(appDeliveryTypeId, oldDetectionMethod);
 
                 mc.InvokeMethod("EnforceApp", inParams, null);
             }
