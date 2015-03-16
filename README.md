@@ -27,4 +27,4 @@ If you plan to use this with SCCM 2007 consider the SCCM Client Center instead.
 # Features
 * Connect to any PC on your Site and view the Application Delivery Types
 * ReRun any of the Applications displayed
-* Can take a computername as commandline so it can be integrated as Extension in the SCCM Console via XML file
+* Can take a computername as commandline argument so it can be integrated as Extension in the SCCM Console via XML file
