@@ -17,3 +17,9 @@ It will write to the WMI and temporarily change settings about a specified Appli
 I have only access to an SCCM2012 R2 environment but it will probably work with the original release as well. 
 Using it with SCCM 2007 is pointless because applications are not present in that version. 
 If you plan to use this with SCCM 2007 consider the SCCM Client Center instead.
+
+# Limitations
+* You need to be admin to run this tool (this will never change)
+* You can currently only see ApplicationDeliveryTypes and not Applications in the list. This has something to do with the model of Applications. The support multiple different types of delivery so the Application itself can not be rerun only the Delivery. The only meaningful way to get a relation between those two I found so far uses the Site Server DB and this means only SCCM Admins could retrieve the information. If I find a way to get the relation locally it will be included, otherwise it will stay this way.
+* Because of the above it is possible to "Re"run something that was never run. This will not change as it is a useful feature imo.
+* Applications installed via the tool will not have the status installed in the Software Center. If they are chosen to be installed manually however, because of the detection method they will be moved to the isntalled section immediately and the setup will not be executed. This is therefore only a cosmetic issue but I plan on changing it if possible.
