@@ -62,7 +62,7 @@ namespace RerunCenter {
                 inParams.SetPropertyValue("ActionType", "Install");
                 inParams.SetPropertyValue("AppDeliveryTypeId", appDeliveryTypeId);
                 inParams.SetPropertyValue("Revision", revision);
-                inParams.SetPropertyValue("SessionId", "1");
+                inParams.SetPropertyValue("SessionId", "0");
                 inParams.SetPropertyValue("ContentPath", "");
                 inParams.SetPropertyValue("UserSid", "");
 

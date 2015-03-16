@@ -39,6 +39,7 @@
             this.gwApplications.AllowUserToAddRows = false;
             this.gwApplications.AllowUserToDeleteRows = false;
             this.gwApplications.AllowUserToOrderColumns = true;
+            this.gwApplications.AllowUserToResizeRows = false;
             this.gwApplications.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
