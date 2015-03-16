@@ -71,7 +71,6 @@ namespace RerunCenter {
                 changeWMIValue(appDeliveryTypeId, oldDetectionMethod);
 
                 mc.InvokeMethod("EnforceApp", inParams, null);
-
             }
         }
 
@@ -88,9 +87,12 @@ namespace RerunCenter {
             }          
         }
 
-        private void txtbxComputer_Enter(object sender, EventArgs e) {
-            getApplicationDeliveryTypes();
+        private void txtbxComputer_KeyDown(object sender, KeyEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                getApplicationDeliveryTypes();
+            }
         }
+
     }
 }
 

@@ -98,7 +98,7 @@
             this.txtbxComputer.Name = "txtbxComputer";
             this.txtbxComputer.Size = new System.Drawing.Size(100, 20);
             this.txtbxComputer.TabIndex = 2;
-            this.txtbxComputer.Enter += new System.EventHandler(this.txtbxComputer_Enter);
+            this.txtbxComputer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtbxComputer_KeyDown);
             // 
             // btnRerun
             // 
