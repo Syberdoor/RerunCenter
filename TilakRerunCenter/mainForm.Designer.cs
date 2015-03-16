@@ -25,12 +25,12 @@
         private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.gwApplications = new System.Windows.Forms.DataGridView();
-            this.btnConnect = new System.Windows.Forms.Button();
-            this.txtbxComputer = new System.Windows.Forms.TextBox();
-            this.btnRerun = new System.Windows.Forms.Button();
             this.colName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colRevision = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAppDeliveryTypeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnConnect = new System.Windows.Forms.Button();
+            this.txtbxComputer = new System.Windows.Forms.TextBox();
+            this.btnRerun = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gwApplications)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,33 +55,6 @@
             this.gwApplications.Size = new System.Drawing.Size(820, 423);
             this.gwApplications.StandardTab = true;
             this.gwApplications.TabIndex = 0;
-            // 
-            // btnConnect
-            // 
-            this.btnConnect.Location = new System.Drawing.Point(119, 9);
-            this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(75, 23);
-            this.btnConnect.TabIndex = 1;
-            this.btnConnect.Text = "Connect";
-            this.btnConnect.UseVisualStyleBackColor = true;
-            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
-            // 
-            // txtbxComputer
-            // 
-            this.txtbxComputer.Location = new System.Drawing.Point(13, 11);
-            this.txtbxComputer.Name = "txtbxComputer";
-            this.txtbxComputer.Size = new System.Drawing.Size(100, 20);
-            this.txtbxComputer.TabIndex = 2;
-            // 
-            // btnRerun
-            // 
-            this.btnRerun.Location = new System.Drawing.Point(200, 9);
-            this.btnRerun.Name = "btnRerun";
-            this.btnRerun.Size = new System.Drawing.Size(75, 23);
-            this.btnRerun.TabIndex = 3;
-            this.btnRerun.Text = "ReRun";
-            this.btnRerun.UseVisualStyleBackColor = true;
-            this.btnRerun.Click += new System.EventHandler(this.btnRerun_Click);
             // 
             // colName
             // 
@@ -108,6 +81,34 @@
             this.colAppDeliveryTypeID.HeaderText = "AppDeliveryTypeID";
             this.colAppDeliveryTypeID.Name = "colAppDeliveryTypeID";
             this.colAppDeliveryTypeID.ReadOnly = true;
+            // 
+            // btnConnect
+            // 
+            this.btnConnect.Location = new System.Drawing.Point(119, 9);
+            this.btnConnect.Name = "btnConnect";
+            this.btnConnect.Size = new System.Drawing.Size(75, 23);
+            this.btnConnect.TabIndex = 1;
+            this.btnConnect.Text = "Connect";
+            this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
+            // 
+            // txtbxComputer
+            // 
+            this.txtbxComputer.Location = new System.Drawing.Point(13, 11);
+            this.txtbxComputer.Name = "txtbxComputer";
+            this.txtbxComputer.Size = new System.Drawing.Size(100, 20);
+            this.txtbxComputer.TabIndex = 2;
+            this.txtbxComputer.Enter += new System.EventHandler(this.txtbxComputer_Enter);
+            // 
+            // btnRerun
+            // 
+            this.btnRerun.Location = new System.Drawing.Point(200, 9);
+            this.btnRerun.Name = "btnRerun";
+            this.btnRerun.Size = new System.Drawing.Size(75, 23);
+            this.btnRerun.TabIndex = 3;
+            this.btnRerun.Text = "ReRun";
+            this.btnRerun.UseVisualStyleBackColor = true;
+            this.btnRerun.Click += new System.EventHandler(this.btnRerun_Click);
             // 
             // frmMain
             // 

@@ -48,6 +48,10 @@ namespace RerunCenter {
         }
 
         private void btnRerun_Click(object sender, EventArgs e) {
+            rerunSelectedApp();
+        }
+
+        private void rerunSelectedApp() {
             using (ManagementClass mc = new ManagementClass(@"\\" + txtbxComputer.Text + @"\root\ccm\CIModels", "CCM_AppDeliveryType", null)) {
 
                 string appDeliveryTypeId = gwApplications.Rows[gwApplications.CurrentRow.Index].Cells["colAppDeliveryTypeID"].Value.ToString();
@@ -81,8 +85,11 @@ namespace RerunCenter {
                 txtbxComputer.Text = args[1]; 
             } else {
                 txtbxComputer.Text = System.Environment.MachineName; 
-                txtbxComputer.Text = "WS00007087";
             }          
+        }
+
+        private void txtbxComputer_Enter(object sender, EventArgs e) {
+            getApplicationDeliveryTypes();
         }
     }
 }
